@@ -1,14 +1,14 @@
 import kotlin.coroutines.experimental.coroutineContext
 
 // typealias
-//typealias operation = (Int, Int) -> Int
+// typealias operation = (Int, Int) -> Int
 
 // Kotlin playground
 fun main(args : Array<String>) {
 
-//    // Something similar to Ternary operator
+//    // Elvis operator ?: for providing default values
 //    var nullableName: String? = null
-//    var length = nullableName?.length ?: -1 // if true use it self, it not use -1
+//    var length = nullableName?.length ?: -1 // if non-null use it self, it not use -1
 //    println(length)
 //    nullableName = "Sam"
 //    length = nullableName?.length ?: -1
@@ -144,7 +144,7 @@ fun main(args : Array<String>) {
 //
 //    // typealias (declared above this main function)
 //    fun printResult2(function: operation, a: Int, b: Int) {
-//        val result = function(4, 2)
+//        val result = function(a, b)
 //        println(result)
 //
 //    }
@@ -207,7 +207,7 @@ fun main(args : Array<String>) {
     // Array method: sliceArray
     val upcomingPlayers = players.sliceArray(0..2)
     for (player in upcomingPlayers) {
-        println(player)                             // Alick, Bob, Cindy
+        println(player)                             // Alice, Bob, Cindy
     }
 
     // Array method: drop, dropLast
